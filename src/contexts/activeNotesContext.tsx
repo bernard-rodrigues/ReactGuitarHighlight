@@ -1,4 +1,3 @@
-import React from 'react'
 import { createContext, ReactNode, useContext, useState } from "react";
 
 interface ActiveNotesProps{
@@ -15,7 +14,7 @@ interface ActiveNotesProviderProps{
 }
 
 const MIN_FRETS = 8
-const MAX_FRETS = 24
+const MAX_FRETS = 32
 
 export function ActiveNotesProvider(props: ActiveNotesProviderProps){
     const [ activeNotes, setActiveNotes ] = useState<number[]>([])
